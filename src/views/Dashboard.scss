@@ -1,0 +1,34 @@
+@import "../components/_variables.scss";
+
+.dashboard {
+  @media screen and (min-width: 992px) {
+    min-height: calc(100vh - 199.985px);
+  }
+
+  &__user-avatar {
+    position: relative;
+  }
+
+  &__user-icon {
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__button {
+    color: $color-primary !important;
+    text-decoration: none !important;
+
+    &:hover,
+    &-active {
+      color: #fff !important;
+      background-color: $color-primary !important;
+      text-decoration: none !important;
+    }
+  }
+
+  .nav-item .nav-link {
+    color: $color-primary;
+  }
+}

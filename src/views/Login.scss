@@ -1,0 +1,22 @@
+
+@import '../components/_variables';
+
+.login {
+  width: 100vw;
+  height: calc(100vh - 328.985px);
+  
+  @media screen and (min-width: 992px) {
+    min-height: calc(100vh - 199.985px);    
+  }
+
+
+
+  display: grid;
+  place-items: center;
+
+  background-image: linear-gradient(135deg,$color-primary, $color-secondary);
+
+  &__container {
+    width: 22rem;
+  }
+}
